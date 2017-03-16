@@ -15,11 +15,12 @@ class ViewController: UIViewController {
     var tapCount = 0
     
     @IBAction func buttonTapped(_ sender: Any) {
-        // increment tapCount by 1
+        // increment tapCount
+        var tapNumber = 5
         tapCount += 1
         
-        if tapCount == 10 {
-            theLabel.text = "You tapped the button 10 times!"
+        if tapCount == tapNumber {
+            theLabel.text = "You tapped the button \(tapNumber) times!"
         }
     }
     
